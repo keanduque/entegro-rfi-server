@@ -25,6 +25,11 @@ app.get("/api/v1", (req, res) => {
 });
 console.log("Query finished");
 
+// Example route
+app.get("/api/v1/rfis2", (req, res) => {
+  res.status(200).json({ message: "RFIs endpoint working!" });
+});
+
 // getting all RFI data for Stats Dashboard
 app.get("/api/v1/rfis/stats", async (req, res) => {
   try {
